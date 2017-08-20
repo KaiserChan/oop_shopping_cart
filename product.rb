@@ -9,10 +9,10 @@ class Product
     @tax_rate = @@tax_rate
   end
 
-  # def self.add(name, price)
-  #   new_product = Product.new(name, price)
-  #   @@products << new_product
-  # end
+  def self.add(name, price)
+    new_product = Product.new(name, price)
+    @@products << new_product
+  end
 
   def self.all_products
     @@products
@@ -37,8 +37,14 @@ class Product
 
 end
 
-steak = Product.new("Flat Iron", 45)
-pork = Product.new("Berkshire", 38)
+# steak = Product.new("Flat Iron", 45)
+# pork = Product.new("Berkshire", 38)
+# pasta = Product.new("Papardelle", 3.5)
+# sauce = Product.new("Rose", 1.99)
+# milk = Product.new("2%", 6.99)
+# popcorn = Product.new("Sweet and Salty", 5.99)
 
 # puts Product.all_products.inspect
-puts steak.final_price.round(2)
+# puts steak.final_price.round(2)
+# puts popcorn.price
+# puts popcorn.final_price.round(2)
